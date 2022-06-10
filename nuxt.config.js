@@ -12,6 +12,7 @@ export default {
       { name: "format-detection", content: "telephone=no" },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    script: [{ src: "https://cdn.tailwindcss.com" }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -46,6 +47,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    'nuxt-buefy',
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
     ["nuxt-buefy", { css: false }],

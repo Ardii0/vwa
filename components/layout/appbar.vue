@@ -43,14 +43,14 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from "vue";
-import Component from "vue-class-component";
+// <script>
+// import Vue from "vue";
+// import Component from "vue-class-component";
 
-@Component
-export default class LayoutHeader extends Vue {
-  onMenuClickedMobile() {
-    this.$emit("onmenuclickedmobile");
-  }
-}
-</script>
+// @Component
+// export default class LayoutHeader extends Vue {
+//   onMenuClickedMobile() {
+//     this.$emit("onmenuclickedmobile");
+//   }
+// }
+// </script>

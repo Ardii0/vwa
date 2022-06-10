@@ -12,21 +12,24 @@
         style="z-index: 2; top: 60px"
         class="w-full fixed opacity-50 left-0 right-0 bottom-0 bg-black"
       ></div>
+
       <div class="flex flex-col p-4 overflow-auto">
         <div
           v-if="navTitle"
-          class="w-full rounded-md flex flex-row items-center bg-white py-3 px-4"
+          class="w-full rounded-md flex flex-row items-center bg-white "
         >
           <button @click="onNavBack" v-if="!noBack" class="rounded-full">
             <b-icon class="hover:text-black" icon="arrow-left"></b-icon>
           </button>
           <span class="ml-3 text-xl font-normal">{{ navTitle }}</span>
         </div>
-        <div class="flex-col mt-2 p-2 flex rounded-lg bg-white">
+
           <slot />
-        </div>
+        <!-- <div class=" mt-2 p-2 rounded-lg bg-white">
+        </div> -->
       </div>
     </div>
+    
   </div>
 </template>
 
